@@ -58,5 +58,5 @@
     if (!HTML5.placeholder.support) {
         HTML5.placeholder.activate('INPUT');
     }
-    KISSY.srp.HTML5 = HTML5;
-})(KISSY);
+    S.srp.HTML5 = HTML5;
+})(window.TK);

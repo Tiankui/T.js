@@ -5,8 +5,8 @@
  *Copyright (c) 2012 Etao.com. 
  *All rights reserved.
  */
-
-(function(S) {
+var TK = {};
+(function(T) {
     var srp = {
         lazyLoad: function(item) {
             //only use '_src' for simple
@@ -39,7 +39,8 @@
         },
         log:function(str){
             window.console&&console.log(str);
-        },
+        }
     };
-    if (!KISSY.srp) KISSY.srp = srp;
-})(KISSY);
+    
+    if (!T.srp) T.srp = srp;
+})(TK);

@@ -6,9 +6,8 @@
  *Created by Tiankui on 2012-02-28.
  */
  
-(function(T,S){
-	var D=S.SOM,E=S.Event,$=S.all;
-	var Tab = function(option){    
+(function(T,$){
+	var Tab = function(option){
 		var setting = option||{
 			panel:$('.ob-panel'),
 			content:$('.ob-itembox'),
@@ -17,12 +16,13 @@
 		/*config::lazyStat; first one should be active!*/
 		lazyStat = [true],
 		/*get from base.js*/
-		lazyLoad = T.lazyLoad,
-		indexOf = T.indexOf,
-		each = T.each;
-		
-		setting.panel.on('click',function(ev){
-			var _index = indexOf(ev.target,setting.panel);
+		lazyLoad = T.srp.lazyLoad,
+		indexOf = T.srp.indexOf,
+		each = T.srp.each;
+
+        
+		setting.panel.click(function(ev) {
+		    var _index = indexOf(ev.target,setting.panel);
 			for (var i = 0,len = setting.content.length;i<len;i++) {
 				if (i===_index) {
 					$(setting.content[i]).show();
@@ -38,8 +38,8 @@
 					$(setting.content[i]).hide();
 					setting.current && $(setting.panel[i]).removeClass(setting.current);
 				}
-			}
-		})
+			} 
+		});
 	};
-    if(!KISSY.srp.Tab) KISSY.srp.Tab = Tab;
-})(KISSY.srp,KISSY);
+    if(!T.srp.Tab) T.srp.Tab = Tab;
+})(TK,jQuery);

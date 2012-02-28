@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="base.css" media="screen" />
+	<script src="base.js"></script>
+	<script src="jQuery.js"></script>
+	<script src="tab.js"></script>
+</head>
+<body>
+<style>
+#onebox-2{width: 980px;height: 150px;margin-bottom: 10px;overflow: hidden;}
+#onebox-2 .ob-left{margin: 10px 30px 10px 0;float: left;}
+#onebox-2 .ob-right{float: right;width: 700px;margin: 10px 0;}
+#onebox-2 .ob-right ul{margin-bottom: 6px;height: 18px;overflow: hidden;}
+#onebox-2 .ob-right li{float: left;}
+#onebox-2 .ob-right .ob-top-title{color:#999;margin-right: 5px;}
+#onebox-2 .ob-right .ob-top-item{float: left; margin-right: 20px;padding-left:15px;height:18px;background: url(http://img01.taobaocdn.com/tps/i1/T1c5eVXc4XXXXXXXXX-48-48.gif) no-repeat 0 -1px;}
+#onebox-2 .ob-right .ob-top-item a{color: #28b2e0;display: block;float: left;}
+#onebox-2 .ob-right .ob-top-item a:hover{color: #E43000;}
+#onebox-2 .ob-right .ob-top-item .onebox-2-icon{
+	width:27px;
+	height: 18px;
+	display:block;
+	float:left;
+	background:url(http://img01.taobaocdn.com/tps/i1/T1c5eVXc4XXXXXXXXX-48-48.gif) no-repeat 0 -22px;
+}
+#onebox-2 .ob-current{font-weight: bold;}
+#onebox-2 .ob-content{margin-top: 8px;}
+#onebox-2 .ob-panel{cursor: pointer;}
+#onebox-2 .ob-style span{float: left;}
+#onebox-2 .ob-item{float: left;width: 80px;height: 80px;margin-right: 30px;overflow: hidden;}
+#onebox-2 .ob-item a{display: block;height: 80px;width: 80px;overflow: hidden;position: relative;}
+#onebox-2 .ob-item a:hover{text-decoration: none;}
+#onebox-2 .ob-item .ob-titlebox{position: absolute;width: 80px;bottom:0;height: 20px;line-height: 20px;overflow: hidden;}
+#onebox-2 .ob-item .ob-shadow{filter:alpha(opacity=70);opacity:0.7;background-color: #333;width: 80px;height: 20px;position: absolute;z-index: 1;}
+#onebox-2 .ob-item .ob-title{color: #fff;position: absolute;z-index: 2;text-align: center;width: 80px;}
+.hidden{display: none;}
+</style>
+
+<script>
+(function(T,$){
+	$(document).ready(function() {
+	   T.srp.Tab();
+	});
+})(TK,jQuery);
+</script>
+	<div id="onebox-2">
+		<div class="ob-left"><a href="#"><img src="http://img.f2e.taobao.net/img.png_250x130.jpg" alt="" /></a></div>
+		<div class="ob-right">
+			<ul class="clear-fix">
+				<li class="ob-top-title">促销信息:</li>
+				<li class="ob-top-item"><a href="#">服装-5折封顶服装-5折封顶服装-5折封顶服装-5折封顶</a><span class="onebox-2-icon"></span></li>
+				<li class="ob-top-item"><a href="#">服装-5折封顶</a></li>
+				<li class="ob-top-item"><a href="#">服装-5折封顶</a></li>
+				<li class="ob-top-item"><a href="#">服装-5折封顶</a></li>
+				<li class="ob-top-item"><a href="#">服装-5折封顶</a></li>
+			</ul>
+			<div class="ob-style">
+				<div class="clear-fix">
+					<span class="ob-current ob-panel">职业装流行款式</span>
+					<span style="color:#999;display:block;margin:0 10px">|</span>
+					<span class="ob-panel">职业装流行款式</span>
+				</div>
+				<div class="ob-content clearfix">
+					<div class="ob-itembox">
+						<div class="ob-item"><a href="#"><div class="ob-titlebox"><div class="ob-shadow"></div><div class="ob-title">西装外套</div></div><img src="http://img.f2e.taobao.net/img.png_80x80.jpg" alt="" /></a></div>
+						<div class="ob-item"><a href="#"><div class="ob-titlebox"><div class="ob-shadow"></div><div class="ob-title">西装外套</div></div><img src="http://img.f2e.taobao.net/img.png_80x80.jpg" alt="" /></a></div>
+						<div class="ob-item"><a href="#"><div class="ob-titlebox"><div class="ob-shadow"></div><div class="ob-title">西装外套</div></div><img src="http://img.f2e.taobao.net/img.png_80x80.jpg" alt="" /></a></div>
+						<div class="ob-item"><a href="#"><div class="ob-titlebox"><div class="ob-shadow"></div><div class="ob-title">西装外套</div></div><img src="http://img.f2e.taobao.net/img.png_80x80.jpg" alt="" /></a></div>
+						<div class="ob-item"><a href="#"><div class="ob-titlebox"><div class="ob-shadow"></div><div class="ob-title">西装外套</div></div><img src="http://img.f2e.taobao.net/img.png_80x80.jpg" alt="" /></a></div>
+						<div class="ob-item"><a href="#"><div class="ob-titlebox"><div class="ob-shadow"></div><div class="ob-title">西装外套</div></div><img src="http://img.f2e.taobao.net/img.png_80x80.jpg" alt="" /></a></div>
+					</div>
+					<div class="ob-itembox hidden">
+						<div class="ob-item"><a href="#"><div class="ob-titlebox"><div class="ob-shadow"></div><div class="ob-title">西装外套</div></div><img _src="http://img.f2e.taobao.net/img.png_80x80.jpg" alt="" /></a></div>
+						<div class="ob-item"><a href="#"><div class="ob-titlebox"><div class="ob-shadow"></div><div class="ob-title">西装外套</div></div><img _src="http://img.f2e.taobao.net/img.png_80x80.jpg" alt="" /></a></div>
+						<div class="ob-item"><a href="#"><div class="ob-titlebox"><div class="ob-shadow"></div><div class="ob-title">西装外套</div></div><img _src="http://img.f2e.taobao.net/img.png_80x80.jpg" alt="" /></a></div>
+						<div class="ob-item"><a href="#"><div class="ob-titlebox"><div class="ob-shadow"></div><div class="ob-title">西装外套</div></div><img _src="http://img.f2e.taobao.net/img.png_80x80.jpg" alt="" /></a></div>
+						<div class="ob-item"><a href="#"><div class="ob-titlebox"><div class="ob-shadow"></div><div class="ob-title">西装外套</div></div><img _src="http://img.f2e.taobao.net/img.png_80x80.jpg" alt="" /></a></div>
+						<div class="ob-item"><a href="#"><div class="ob-titlebox"><div class="ob-shadow"></div><div class="ob-title">西装外套</div></div><img _src="http://img.f2e.taobao.net/img.png_80x80.jpg" alt="" /></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

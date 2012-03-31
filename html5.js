@@ -1,6 +1,5 @@
 /*
  *html5
-
  *Created by Tiankui on 2011-12-28.
  *Copyright (c) 2011 Etao.com. 
  *All rights reserved.
